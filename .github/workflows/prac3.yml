@@ -5,5 +5,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: output-github-context
-        run: |
-          echo "${{ toJSON(github.event) }}"
+        run: echo "${{ toJSON(github.event) }}"
