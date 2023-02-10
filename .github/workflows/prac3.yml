@@ -6,5 +6,4 @@ jobs:
     steps:
       - name: output-github-context
         run: |
-          output=$(echo "${{ toJSON(github) }}")
-          echo $output | grep details
+          echo "${{ toJSON(github.event) }}"
