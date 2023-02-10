@@ -1,5 +1,5 @@
-name: prac-exercise1
-on: [push, workflow_dispatch]
+name: prac-exercise2
+on: workflow_dispatch
 jobs:
   deploy:
     runs-on: ubuntu-latest
