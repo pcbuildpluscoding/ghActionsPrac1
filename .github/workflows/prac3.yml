@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: output-github-context
-        run: echo "${{ toJSON(github) }}" | grep event
+        run: |
+          output=$(echo "${{ toJSON(github) }}")
+          echo $output | grep details
